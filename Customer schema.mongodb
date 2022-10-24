@@ -1,0 +1,25 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('mongodbVSCodePlaygroundDB');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.loans.drop();
+
+// Insert a few documents into the loans collection.
+db.loans.insertMany([
+  { '_id': 0, 'customername': 'Adam', 'phoneNumber': 8155843561, 'address': 'Mesa', 'loanAmount':422, 'intrest':2, 'loanTermYears': 2, 'loanType': 'Eduction Loan', 'description': 'Loan for Education', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+  { '_id': 1, 'customername': 'Ulma', 'phoneNumber': 0829531712, 'address': 'Phoenix', 'loanAmount':200, 'intrest':5, 'loanTermYears': 3, 'loanType': 'Car Loan', 'description': 'Loan too buy a car', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+  { '_id': 2, 'customername': 'Surya', 'phoneNumber': 4392834321, 'address': 'Tempe', 'loanAmount':110, 'intrest':7, 'loanTermYears': 5, 'loanType': 'Car Loan', 'description': 'Loan to buy a Car', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')},
+  { '_id': 3, 'customername': 'Sabro', 'phoneNumber': 0472947635, 'address': 'Scotsdale', 'loanAmount':20, 'intrest':1, 'loanTermYears': 6, 'loanType': 'Home Loan', 'description': 'Loan to buy new home', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')},
+  { '_id': 4, 'customername': 'AAdit', 'phoneNumber': 619347295, 'address': 'Ranch', 'loanAmount':40, 'intrest':3, 'loanTermYears': 2, 'loanType': 'Business Loan', 'description': 'Loan for starting a new business', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+  { '_id': 5, 'customername': 'Shloki', 'phoneNumber': 749274994, 'address': "SouthWest", 'loanAmount':150, 'intrest':4, 'loanTermYears': 4, 'loanType': 'Car Loan', 'description': 'Loan for buying new Car', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+  { '_id': 6, 'customername': 'Perm', 'phoneNumber': 374920380, 'address': 'Richardson', 'loanAmount':240, 'intrest':7, 'loanTermYears': 6, 'loanType': 'Personal Loan', 'description': 'Personal loan', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+  { '_id': 7, 'customername': 'Talia', 'phoneNumber': 2398943414, 'address': 'Downtown', 'loanAmount':910, 'intrest':3, 'loanTermYears': 3, 'loanType': 'Personal Loan', 'description': 'Personal Loan', 'date': new Date('2014-03-01T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')},
+]);
+
+
